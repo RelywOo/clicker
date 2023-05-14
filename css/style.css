@@ -28,7 +28,8 @@ h1, h2, h3, h4, h5, h6, p
     text-align: center;
     color: white;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 50px 0;
+    
 }
 
 
@@ -138,6 +139,8 @@ h1, h2, h3, h4, h5, h6, p
     .container
     {
         width: 500px;
+        padding-top: 60px;
+        padding-bottom: 90px;
     }
 
     .best-score-container
