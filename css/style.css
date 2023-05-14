@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6, p
     text-align: center;
     color: white;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 
@@ -144,7 +145,6 @@ h1, h2, h3, h4, h5, h6, p
         width: 400px;
         padding: 20px 0;
         margin-bottom: 40px;
-        margin-top: 60px;
     }
 
     .best-score-text
@@ -195,7 +195,6 @@ h1, h2, h3, h4, h5, h6, p
     {
         width: 400px;
         padding: 15px 0;
-        margin-bottom: 90px;
     }
 
 
