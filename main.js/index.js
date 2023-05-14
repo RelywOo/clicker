@@ -26,6 +26,7 @@ function resetValues ()
     start.textContent ="Start"
     timer.textContent = `${timerValue}`
     clickPerSecond.textContent = `${clickPerSecondNumb}`
+    start.style.marginBottom = '150px'
 }
 
 
@@ -52,6 +53,7 @@ function all()
             clickPerSecondNumb = result/timerValue2
             clickPerSecond.textContent = `${clickPerSecondNumb}`
             tryAgain.style.display = "block"
+            start.style.marginBottom = '17px'
             return;
          }
          
@@ -60,7 +62,7 @@ function all()
       }, 1000)
  }
 
- 
+
  resetValues()
  
 
@@ -78,12 +80,3 @@ tryAgain.addEventListener('click', all)
 
 
  
- 
-
-
-
-
-
-
-
-

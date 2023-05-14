@@ -47,8 +47,6 @@ h1, h2, h3, h4, h5, h6, p
 {
     font-size: 30px;
     line-height: 1.17;
-    width: 145px;
-    padding-bottom: 15px;
     margin: 0 auto;
 }
 
@@ -56,7 +54,6 @@ h1, h2, h3, h4, h5, h6, p
 
 .best-score-value
 {
-    width: 37px;
     font-size: 30px;
     line-height: 1.17;
     margin: 0 auto;
@@ -64,7 +61,6 @@ h1, h2, h3, h4, h5, h6, p
 
 .timer
 {
-    width: 20px;
     font-size: 36px;
     line-height: 1.17;
     color: #4D243D;
@@ -83,7 +79,7 @@ h1, h2, h3, h4, h5, h6, p
     font-size: 36px;
     line-height: 1.17;
     color: white;
-    margin-bottom: 17px;
+    margin-bottom: 150px;
 }
 
 
@@ -94,12 +90,11 @@ h1, h2, h3, h4, h5, h6, p
     border-radius: 10px;
     padding: 12px 0;
     margin: 0 auto;
-    margin-bottom: 43px;
+    margin-bottom: 74px;
 }
 
 .try-again
 {
-    width: 145px;
     background: #A7CAB1;
     font-size: 30px;
     line-height: 1.17;
@@ -121,16 +116,13 @@ h1, h2, h3, h4, h5, h6, p
 
 .click-per-second-text
 {
-    width: 177px;
     font-size: 24px;
     line-height: 1.17;
-    padding-bottom: 14px;
     margin: 0 auto;
 }
 
 .click-per-second-value
 {
-    width: 34px;
     font-size: 24px;
     line-height: 1.17;
     margin: 0 auto;
@@ -157,22 +149,18 @@ h1, h2, h3, h4, h5, h6, p
 
     .best-score-text
     {
-        width: 235px;
         font-size: 48px;
         line-height: 1.20;
-        padding-bottom: 40px;
     }
 
     .best-score-value
     {
-        width: 60px;
         font-size: 48px;
         line-height: 1.20;
     }
 
     .timer
     {
-        width: 40px;
         font-size: 72px;
         line-height: 1.25;
         margin-bottom: 50px;
@@ -184,7 +172,7 @@ h1, h2, h3, h4, h5, h6, p
         height: 500px;
         font-size: 60px;
         line-height: 1.17;
-        margin-bottom: 20px;
+        margin-bottom: 150px;
     }
 
 
@@ -192,7 +180,7 @@ h1, h2, h3, h4, h5, h6, p
     {
         width: 300px;
         padding: 12px 0;
-        margin-bottom: 80px;
+        margin-bottom: 53px;
 
     }
 
@@ -213,15 +201,12 @@ h1, h2, h3, h4, h5, h6, p
 
     .click-per-second-text
     {
-        width: 265px;
         font-size: 36px;
         line-height: 1.17;
-        padding-bottom: 11px;
     }
 
     .click-per-second-value
     {
-        width: 50px;
         font-size: 36px;
         line-height: 1.17;
     }
