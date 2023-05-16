@@ -3,6 +3,13 @@ let start = document.querySelector('.start')
 let timer = document.querySelector('.timer')
 let bestScore = document.querySelector('.best-score-value')
 let clickPerSecond = document.querySelector('.click-per-second-value')
+let btnReverse = document.querySelector('.reverse-btn')
+let contReverse = document.querySelector('.reverse-container')
+let body = document.querySelector('body')
+let contBestScore = document.querySelector('.best-score-container')
+let contClickPerSecond = document.querySelector('.click-per-second-container')
+let tryAgainBtn = document.querySelector('.try-again')
+
 
 
 tryAgain.style.display = "none"
@@ -13,6 +20,43 @@ let timerValue = 10
 let timerValue2 =timerValue
 let idInterval
 let result = 0
+
+
+function reverse()
+{
+   btnReverse.style.left = "64px"
+   body.style.backgroundColor = "#2c2323"
+   contReverse.style.backgroundColor = "#d9caca"
+   btnReverse.style.backgroundColor = "#2c2323"
+   start.style.backgroundColor = "#5c3253"
+   timer.style.color = "white"
+   contBestScore.style.backgroundColor = "#29402e"
+   contClickPerSecond.style.backgroundColor = "#29402e"
+   tryAgain.style.backgroundColor = "#36706c"
+   tryAgainBtn.style.backgroundColor = "#36706c"
+
+
+   btnReverse.removeEventListener('click', reverse)
+   btnReverse.addEventListener('click', reverse2)
+}
+
+function reverse2()
+{
+   btnReverse.style.left = "4px"
+   body.style.backgroundColor = ""
+   contReverse.style.backgroundColor = ""
+   btnReverse.style.backgroundColor = ""
+   start.style.backgroundColor = ""
+   timer.style.color = ""
+   contBestScore.style.backgroundColor = ""
+   contClickPerSecond.style.backgroundColor = ""
+   tryAgain.style.backgroundColor = ""
+   tryAgainBtn.style.backgroundColor = ""
+
+   btnReverse.removeEventListener('click', reverse2)
+   btnReverse.addEventListener('click', reverse)
+}
+
 
 function resetValues ()
 {
@@ -28,7 +72,7 @@ function resetValues ()
     clickPerSecond.textContent = `${clickPerSecondNumb}`
     start.style.marginBottom = '150px'
 }
-
+btnReverse.addEventListener('click', reverse)
 
 all()
 function all()
