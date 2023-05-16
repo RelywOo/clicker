@@ -9,6 +9,7 @@ let body = document.querySelector('body')
 let contBestScore = document.querySelector('.best-score-container')
 let contClickPerSecond = document.querySelector('.click-per-second-container')
 let tryAgainBtn = document.querySelector('.try-again')
+let btnReverseTwo = document.querySelector('.reverse-btn-two')
 
 
 
@@ -34,10 +35,13 @@ function reverse()
    contClickPerSecond.style.backgroundColor = "#29402e"
    tryAgain.style.backgroundColor = "#36706c"
    tryAgainBtn.style.backgroundColor = "#36706c"
+   btnReverseTwo.style.backgroundColor = "#d9caca"
 
 
    btnReverse.removeEventListener('click', reverse)
+   btnReverseTwo.removeEventListener('click', reverse)
    btnReverse.addEventListener('click', reverse2)
+   btnReverseTwo.addEventListener('click', reverse2)
 }
 
 function reverse2()
@@ -52,9 +56,12 @@ function reverse2()
    contClickPerSecond.style.backgroundColor = ""
    tryAgain.style.backgroundColor = ""
    tryAgainBtn.style.backgroundColor = ""
+   btnReverseTwo.style.backgroundColor = ""
 
    btnReverse.removeEventListener('click', reverse2)
+   btnReverseTwo.removeEventListener('click', reverse2)
    btnReverse.addEventListener('click', reverse)
+   btnReverseTwo.addEventListener('click', reverse)
 }
 
 
@@ -73,6 +80,7 @@ function resetValues ()
     start.style.marginBottom = '150px'
 }
 btnReverse.addEventListener('click', reverse)
+btnReverseTwo.addEventListener('click', reverse)
 
 all()
 function all()

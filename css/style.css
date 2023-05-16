@@ -2,6 +2,7 @@ body
 {
     font-family: 'Roboto';
     font-style: normal;
+    transition: 500ms background-color;
 }
 
 
@@ -22,6 +23,20 @@ h1, h2, h3, h4, h5, h6, p
 
 
 
+.reverse-btn-two
+{
+    position: absolute;
+    left: 4px;
+    width: 100px;
+    height: 41px;
+    border-radius: 100px;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    transition: 500ms left;
+    background-color: #2c2323;
+    cursor: pointer;
+}
 
 .reverse-container
 {
@@ -31,8 +46,9 @@ h1, h2, h3, h4, h5, h6, p
     border-radius: 100px;
     position: relative;
     margin: 0 auto;
-    margin-top: 30px;
     padding: 4px;
+    border: 0;
+    transition: 500ms left;
 }
 
 .reverse-btn
@@ -46,7 +62,8 @@ h1, h2, h3, h4, h5, h6, p
     background-color: #d9caca;
     padding: 0;
     border: 0;
-
+    transition: 500ms left;
+    cursor: pointer;
 }
 
 
@@ -70,6 +87,7 @@ h1, h2, h3, h4, h5, h6, p
     padding: 10px 0;
     margin-bottom: 40px;
     transition: 500ms width;
+    transition: 500ms background-color;
 }
 
 
@@ -109,8 +127,10 @@ h1, h2, h3, h4, h5, h6, p
     font-size: 36px;
     line-height: 1.17;
     color: white;
+    cursor: pointer;
     margin-bottom: 150px;
     transition: 500ms width,height;
+    transition: 500ms background-color;
 }
 
 
@@ -123,6 +143,7 @@ h1, h2, h3, h4, h5, h6, p
     margin: 0 auto;
     margin-bottom: 74px;
     transition: 500ms width;
+    transition: 500ms background-color;
 }
 
 .try-again
@@ -130,9 +151,11 @@ h1, h2, h3, h4, h5, h6, p
     background-color: #A7CAB1;
     font-size: 30px;
     line-height: 1.17;
+    cursor: pointer;
     border: 0;
     color: white;
     padding: 0;
+    transition: 500ms background-color;
 }
 
 
@@ -144,6 +167,7 @@ h1, h2, h3, h4, h5, h6, p
     padding: 15px 0;
     margin: 0 auto;
     transition: 500ms width;
+    transition: 500ms background-color;
 }
 
 
