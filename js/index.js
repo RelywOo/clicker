@@ -1,41 +1,45 @@
-let tryAgain = document.querySelector('.try-again-container')
-let start = document.querySelector('.start')
-let timer = document.querySelector('.timer')
-let bestScore = document.querySelector('.best-score-value')
-let clickPerSecond = document.querySelector('.click-per-second-value')
-let btnReverse = document.querySelector('.reverse-btn')
-let contReverse = document.querySelector('.reverse-container')
 let body = document.querySelector('body')
-let contBestScore = document.querySelector('.best-score-container')
-let contClickPerSecond = document.querySelector('.click-per-second-container')
-let tryAgainBtn = document.querySelector('.try-again')
+let contReverse = document.querySelector('.reverse-container')
+let btnReverse = document.querySelector('.reverse-btn')
 let btnReverseTwo = document.querySelector('.reverse-btn-two')
+let contBestScore = document.querySelector('.best-score-container')
+let bestScore = document.querySelector('.best-score-value')
+let timer = document.querySelector('.timer')
+let start = document.querySelector('.start')
+let tryAgain = document.querySelector('.try-again')
+let contClickPerSecond = document.querySelector('.click-per-second-container')
+let clickPerSecond = document.querySelector('.click-per-second-value')
 
 
+if(body.clientWidth>1200)
+{
+   start.style.marginBottom = "180px"
+   tryAgain.style.marginBottom = "83px"
+}else{
+   start.style.marginBottom = "120px"
+   tryAgain.style.marginBottom = "43px"
+}
 
-tryAgain.style.display = "none"
+
 let clickPerSecondNumb = 0
-let bestScoreNumb = Number(bestScore.textContent)
+let bestScoreNumb = 0
 let count = 0
 let timerValue = 10
-let timerValue2 =timerValue
 let idInterval
 let result = 0
 
-
 function reverse()
 {
-   btnReverse.style.left = "64px"
-   body.style.backgroundColor = "#2c2323"
-   contReverse.style.backgroundColor = "#d9caca"
-   btnReverse.style.backgroundColor = "#2c2323"
-   start.style.backgroundColor = "#5c3253"
-   timer.style.color = "white"
-   contBestScore.style.backgroundColor = "#29402e"
-   contClickPerSecond.style.backgroundColor = "#29402e"
-   tryAgain.style.backgroundColor = "#36706c"
-   tryAgainBtn.style.backgroundColor = "#36706c"
-   btnReverseTwo.style.backgroundColor = "#d9caca"
+   btnReverse.classList.add("btn-bc")
+   body.classList.add("body-bg")
+   contReverse.classList.add("reverse2")
+   btnReverseTwo.classList.add("reverse2")
+   start.classList.add("start-bg")
+   timer.classList.add("timer-color")
+   contBestScore.classList.add("containers")
+   contClickPerSecond.classList.add("containers")
+   tryAgain.classList.add("try-again-btn")
+   
 
 
    btnReverse.removeEventListener('click', reverse)
@@ -46,17 +50,15 @@ function reverse()
 
 function reverse2()
 {
-   btnReverse.style.left = "4px"
-   body.style.backgroundColor = ""
-   contReverse.style.backgroundColor = ""
-   btnReverse.style.backgroundColor = ""
-   start.style.backgroundColor = ""
-   timer.style.color = ""
-   contBestScore.style.backgroundColor = ""
-   contClickPerSecond.style.backgroundColor = ""
-   tryAgain.style.backgroundColor = ""
-   tryAgainBtn.style.backgroundColor = ""
-   btnReverseTwo.style.backgroundColor = ""
+   btnReverse.classList.remove("btn-bc")
+   body.classList.remove("body-bg")
+   contReverse.classList.remove("reverse2")
+   btnReverseTwo.classList.remove("reverse2")
+   start.classList.remove("start-bg")
+   timer.classList.remove("timer-color")
+   contBestScore.classList.remove("containers")
+   contClickPerSecond.classList.remove("containers")
+   tryAgain.classList.remove("try-again-btn")
 
    btnReverse.removeEventListener('click', reverse2)
    btnReverseTwo.removeEventListener('click', reverse2)
@@ -68,16 +70,19 @@ function reverse2()
 function resetValues ()
 {
     clickPerSecondNumb = 0
-    bestScoreNumb = Number(bestScore.textContent)
     count = 0
     timerValue = 10
-    timerValue2 =timerValue
     result = 0
     tryAgain.style.display = "none"
     start.textContent ="Start"
     timer.textContent = `${timerValue}`
     clickPerSecond.textContent = `${clickPerSecondNumb}`
-    start.style.marginBottom = '150px'
+    if(body.clientWidth>1200)
+    {
+       start.style.marginBottom = "180px"
+    }else{
+    start.style.marginBottom = "120px"
+    }
 }
 btnReverse.addEventListener('click', reverse)
 btnReverseTwo.addEventListener('click', reverse)
@@ -102,22 +107,17 @@ function all()
             {
                 bestScore.textContent = `${result}`
             }
-            clickPerSecondNumb = result/timerValue2
+            clickPerSecondNumb = result/10
             clickPerSecond.textContent = `${clickPerSecondNumb}`
             tryAgain.style.display = "block"
-            start.style.marginBottom = '17px'
+            start.style.marginBottom = "17px"
+            bestScoreNumb = result
             return;
          }
-         
-         
-         
       }, 1000)
  }
-
-
  resetValues()
  
-
 
  function onClickGame()
  {
@@ -130,5 +130,3 @@ function all()
 
 tryAgain.addEventListener('click', all)
 
-
- 

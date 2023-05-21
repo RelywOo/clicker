@@ -6,6 +6,7 @@ body
 }
 
 
+
 html{
     box-sizing: content-box;
 }
@@ -22,7 +23,6 @@ h1, h2, h3, h4, h5, h6, p
 }
 
 
-
 .reverse-btn-two
 {
     position: absolute;
@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h6, p
     transition: 500ms left;
     background-color: #2c2323;
     cursor: pointer;
+    
 }
 
 .reverse-container
@@ -96,6 +97,7 @@ h1, h2, h3, h4, h5, h6, p
     font-size: 30px;
     line-height: 1.17;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 
@@ -128,34 +130,29 @@ h1, h2, h3, h4, h5, h6, p
     line-height: 1.17;
     color: white;
     cursor: pointer;
-    margin-bottom: 150px;
+    margin-bottom: 120px;
     transition: 500ms width,height;
     transition: 500ms background-color;
 }
 
 
-.try-again-container
-{
-    width: 180px;
-    background-color: #A7CAB1;
-    border-radius: 10px;
-    padding: 12px 0;
-    margin: 0 auto;
-    margin-bottom: 74px;
-    transition: 500ms width;
-    transition: 500ms background-color;
-}
 
 .try-again
 {
+    width: 180px;
+    border-radius: 10px;
+    padding: 12px 29px;
+    margin: 0 auto;
+    margin-bottom: 74px;
+    transition: 500ms width;
     background-color: #A7CAB1;
     font-size: 30px;
     line-height: 1.17;
     cursor: pointer;
     border: 0;
     color: white;
-    padding: 0;
     transition: 500ms background-color;
+    display: none;
 }
 
 
@@ -176,6 +173,7 @@ h1, h2, h3, h4, h5, h6, p
     font-size: 24px;
     line-height: 1.17;
     margin: 0 auto;
+    margin-bottom: 14px;
 }
 
 .click-per-second-value
@@ -186,8 +184,44 @@ h1, h2, h3, h4, h5, h6, p
 }
 
 
+.btn-bc
+{
+    background-color: #2c2323;
+    left: 64px;
+}
 
 
+.body-bg
+{
+    background-color: #2c2323;
+}
+
+.timer-color
+{
+    color: white;
+}
+
+.start-bg
+{
+    background-color: #5c3253;
+}
+
+ .reverse2
+ {
+    background-color: #d9caca;
+ }
+
+ .try-again-btn
+ {
+    background-color: #36706c;
+ }
+
+ .containers
+ {
+    background-color: #412884;
+ }
+
+ 
 
 @media (min-width: 1200px)
 {
@@ -210,6 +244,7 @@ h1, h2, h3, h4, h5, h6, p
     {
         font-size: 48px;
         line-height: 1.20;
+        margin-bottom: 40px;
     }
 
     .best-score-value
@@ -231,21 +266,14 @@ h1, h2, h3, h4, h5, h6, p
         height: 500px;
         font-size: 60px;
         line-height: 1.17;
-        margin-bottom: 150px;
     }
 
 
-    .try-again-container
-    {
-        width: 300px;
-        padding: 12px 0;
-        margin-bottom: 53px;
-
-    }
 
     .try-again
     {
-        width: 210px;
+        width: 300px;
+        padding: 12px 52px;
         font-size: 48px;
         line-height: 1.17;
     }
@@ -261,6 +289,7 @@ h1, h2, h3, h4, h5, h6, p
     {
         font-size: 36px;
         line-height: 1.17;
+        margin-bottom: 11px;
     }
 
     .click-per-second-value
