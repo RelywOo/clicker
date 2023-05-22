@@ -99,9 +99,9 @@ function all()
       idInterval = setInterval(() => {
          timerValue--
          timer.textContent = `${timerValue}`
-         if(timerValue===0)
-         {
-            clearInterval(idInterval)
+      }, 1000)
+      setTimeout(() => {
+         clearInterval(idInterval)
             start.removeEventListener('click', onClickGame)
             if(bestScoreNumb<=result)
             {
@@ -113,8 +113,7 @@ function all()
             start.style.marginBottom = "17px"
             bestScoreNumb = result
             return;
-         }
-      }, 1000)
+      }, 10000)
  }
  resetValues()
  
